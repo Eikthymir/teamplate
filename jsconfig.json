@@ -1,11 +1,9 @@
-// https://hbiao68.blog.csdn.net/article/details/108528734
 {
   "compilerOptions": {
-    "baseUrl": "./", // 用于解析非相对模块名称的基目录
-    "paths": { //指定相对于baseUrl选项计算的路径映射
-      "@/*": ["src/*"] // 使用@别名代替src
+    "baseUrl": "./",
+    "paths": {
+        "@/*": ["src/*"]
     }
   },
-  // 智能感知排除node_modules，dist文件夹目录下文件
   "exclude": ["node_modules", "dist"]
 }
