@@ -1,5 +1,5 @@
 ## 简介
-[vue-my-template-cli3.0](https://github.com/Eikthymir/vue-my-teamplate-cli3.0)基于[vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)，提供request封装，路由拦截，mock，插件配置，帮助快速你快速搭建网站原型
+[vue-template-cli4.0](https://github.com/Eikthymir/vue-my-teamplate-cli3.0)基于[vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)，提供request封装，路由拦截，mock，插件配置，帮助快速你快速搭建网站原型
 更多信息请参考 [使用文档](https://panjiachen.github.io/vue-element-admin-site/zh/)
 
 ## 前序准备
@@ -20,6 +20,7 @@
 
 
 ### 目录结构
+```bash
 ├── build                      # 构建相关
 ├── mock                       # 项目mock 模拟数据
 ├── public                     # 静态资源
@@ -49,19 +50,22 @@
 ├── postcss.config.js          # postcss 配置 
 └── package.json               # package.json
 ├── vue.config.js              # vue-cli 配置
-
+```
 
 ### 项目引导
-项目运行：npm run xxx 
+```bash
+# 项目运行
 -> 查看package.json(自定义script查看build/index.js)
 -> 查看vue.config.js(基本配置如端口，路径配置，webpack配置)
 -> 查看main.js(引入样式表src/styles，路由拦截src/permission等)
 -> 查看router(页面路由配置，如果多页面可以在module下面按需分离)
 -> 查看views
-尝试请求
+
+# 请求
 -> 查看mock
 -> 查看api
 -> 查看store
+```
 
 ## 开发
 
