@@ -20,6 +20,7 @@
 ├── apiconfig.js               # api配置
 ├── App.vue                    # 入口页面
 ├── main.js                    # 入口文件 加载组件 初始化等
+├── mainfest.json              # app配置
 ├── pages.json                 # 路由配置
 ├── uni.scss                   # uni-app内置的常用样式
 ```
