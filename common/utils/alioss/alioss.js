@@ -1,6 +1,6 @@
-const Base64 = require('./alioss/base64.js');
-const Crypto = require('./alioss/crypto.js');
-const url = require('@/common/api/request.js');
+const Base64 = require('./base64.js');
+const Crypto = require('./crypto.js');
+const url = require('@/common/utils/request.js');
 
 const aliOSS = {
   accessKeyID: '',
