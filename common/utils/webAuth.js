@@ -8,7 +8,7 @@ import {
 } from './miniUtils.js'
 import login from '../utils/login.js'
 
-/*
+/**
 @autoLogin { string } 表示从首页进来需要直接登录
 @path { string } 表示授权成功后跳转的页面
 */
