@@ -1,0 +1,2 @@
+keytool -genkey -validity 36000 -alias oneshowstar -keyalg RSA -keystore oneshowstar.keystore
+keytool -importkeystore -srckeystore oneshowstar.keystore -destkeystore oneshowstar.keystore -deststoretype pkcs12
