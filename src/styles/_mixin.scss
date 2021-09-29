@@ -1,3 +1,66 @@
-@mixin name {
-  
+@import "variables";
+
+// flex-center
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// flex-between
+@mixin flex-between() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// 垂直水平居中
+@mixin center() {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+//ellipsis
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//multi line ellipsis
+@mixin multiline-ellipsis($num: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  white-space: normal !important;
+  word-wrap: break-word;
+  word-break:break-all;
+}
+
+@mixin hover_border_light() {
+  &:hover {
+    box-shadow: 0px 0px 10px #FFFFFF;
+  }
+}
+@mixin hover_light() {
+  & {
+    transition: color .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  &:hover {
+   color: $link-active-color;
+  }
+}
+
+@mixin linear-gradient($position: to right, $leftColor: #0056C7, $rightColor: #00BAF4) {
+	background-image: -webkit-linear-gradient($position, $leftColor, $rightColor);
+	background-image: -moz-linear-gradient($position, $leftColor, $rightColor);
+	background-image: -o-linear-gradient($position, $leftColor, $rightColor);
+	background-image: linear-gradient($position, $leftColor, $rightColor);
 }

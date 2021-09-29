@@ -1,0 +1,58 @@
+.trans-slide {
+  &-enter, &-leave-to {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  &-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  &-enter-active{
+    transition: all .3s linear;
+  }
+}
+.trans-slide-y {
+  &-enter, &-leave-to {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  &-leave-active {
+    transition: all 100ms cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  &-enter-active{
+    transition: all 100ms linear;
+  }
+}
+.trans-fade {
+  &-enter, &-leave-to {
+    opacity: 0;
+  }
+  &-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  &-enter-active{
+    transition: all .3s linear;
+  }
+}
+.trans-fade-fast {
+  &-enter, &-leave-to {
+    opacity: 0;
+  }
+  &-leave-active {
+    transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  &-enter-active{
+    transition: all .1s linear;
+  }
+}
+.trans-bounce {
+  &-enter, &-leave-to {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  &-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  &-enter-active{
+    transition: all .3s linear;
+  }
+}
