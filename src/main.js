@@ -5,7 +5,7 @@ import store from './store'
 
 import '@/styles/index.scss' // 全局引入样式
 
-import './permission' // 在permission.js中控制页面跳转
+import './permission'
 
 // 开发环境下使用mock
 if (process.env.NODE_ENV === 'development') {

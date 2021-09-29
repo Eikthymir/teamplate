@@ -1,9 +1,9 @@
 // 配置eslint
 module.exports = {
-  root: true, // 告诉eslint找当前配置文件不能往父级查找
+  root: true,
   env: {
     browser: true,
-    node: true, // 指定环境的全局变量，下面的配置指定为node环境
+    node: true,
     es6: true
   },
   // 配置vue.js风格

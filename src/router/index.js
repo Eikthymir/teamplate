@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/home')
+    component: () => import('@/pages/home')
   },
   {
     path: '/about',
@@ -17,11 +17,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '@/views/about/index.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/pages/about/index.vue')
   },
   {
     path: '/404',
-    component: () => import('@/views/error-page/404'),
+    component: () => import('@/pages/error-page/404'),
     hidden: true
   },
   // 404页面重定向必须最后
